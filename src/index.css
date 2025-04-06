@@ -1,0 +1,109 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 99%;
+    --foreground: 240 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 240 10% 15%;
+
+    --secondary: 240 50% 70%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 45 30% 96%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 50% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 5% 90%;
+    --input: 45 5% 90%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 10% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 240 10% 15%;
+
+    --secondary: 240 50% 40%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 240 10% 20%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 240 50% 40%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 45 100% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Custom focus styles */
+  input:focus, textarea:focus, select:focus, button:focus {
+    @apply outline-none ring-2 ring-llamayellow-600 ring-offset-2 ring-offset-background transition-all duration-200;
+  }
+
+  /* 3D button effect classes */
+  .btn-3d {
+    @apply relative transition-transform duration-200 active:animate-button-press;
+    transform-style: preserve-3d;
+  }
+
+  .btn-3d::before {
+    content: '';
+    @apply absolute inset-0 bg-black/10 rounded-lg -z-10;
+    transform: translateZ(-1px) translateY(4px);
+    filter: blur(4px);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-llamayellow-600 to-llamapurple-600;
+  }
+}
