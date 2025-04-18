@@ -47,7 +47,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <Button asChild className="btn-3d bg-llamayellow-600 hover:bg-llamayellow-700 text-black">
-            <a href="https://app.llamaresearcher.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://register.llamaresearcher.com" target="_blank" rel="noopener noreferrer">
               Subscribe For Free
             </a>
           </Button>
