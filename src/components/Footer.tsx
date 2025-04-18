@@ -48,7 +48,10 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-semibold mb-4">Try It</h3>
             <ul className="space-y-2">
-              <li><a href="https://app.llamaresearcher.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-llamayellow-600 transition-colors">Web App</a></li>
+              <li><a href="https://register.llamaresearcher.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-llamayellow-600 transition-colors">Sign Up</a></li>
+            </ul>
+            <ul className="space-y-2">
+              <li><a href="https://app.llamaresearcher.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-llamayellow-600 transition-colors">Log In</a></li>
             </ul>
           </div>
         </div>

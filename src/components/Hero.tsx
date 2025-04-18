@@ -37,10 +37,6 @@ const Hero = () => {
                 </a>
               </Button>
             </div>
-            
-            <div className="text-sm text-muted-foreground">
-              <p>✨ No registration needed • Completely free for 30 days ✨</p>
-            </div>
           </div>
           
           <div className="relative">

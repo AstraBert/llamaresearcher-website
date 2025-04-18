@@ -14,14 +14,23 @@ const CTA = () => {
                   Start Researching Smarter, Not Harder
                 </h2>
                 <p className="text-lg mb-6">
-                  Experience the future of research with LlamaResearcher. Create well-researched, fully cited essays in seconds. Try it free for 30 days!
+                  Experience the future of research with LlamaResearcher. Create well-researched, fully cited essays in seconds.
                 </p>
                 <Button 
                   asChild
                   className="btn-3d bg-llamayellow-600 hover:bg-llamayellow-700 text-black text-lg py-6 px-8"
                 >
-                  <a href="https://app.llamaresearcher.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://register.llamaresearcher.com" target="_blank" rel="noopener noreferrer">
                     Get Started Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+                <Button 
+                  asChild
+                  className="btn-3d bg-white hover:bg-llamayellow-400 text-black text-lg py-6 px-8"
+                >
+                  <a href="https://app.llamaresearcher.com" target="_blank" rel="noopener noreferrer">
+                    Log In
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
